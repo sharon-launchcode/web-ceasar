@@ -6,7 +6,10 @@ app.config['DEBUG'] = True
 
 form = """
 <!DOCTYPE html>
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/master
 <html>
     <head>
         <style>
@@ -36,7 +39,10 @@ form = """
         </form>
     </body>
 </html>
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/master
 """
 
 @app.route("/")
@@ -52,8 +58,15 @@ def encrypt():
         answer =  rotate_string(text, rot)
         #return render_template('/index.html', answer=answer)
         #return answer
+<<<<<<< HEAD
         #test for git
         return form.format(answer)
 
 
 app.run()
+=======
+        return form.format(answer)
+
+
+app.run()
+>>>>>>> refs/remotes/origin/master
