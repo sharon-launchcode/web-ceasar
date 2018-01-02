@@ -52,6 +52,7 @@ def encrypt():
         answer =  rotate_string(text, rot)
         #return render_template('/index.html', answer=answer)
         #return answer
+        #test for git
         return form.format(answer)
 
 
